@@ -10,7 +10,7 @@ a {
 
 .navBackground {
   background-image: url("../../images/nav-bar.png");
-  object-fit: none;
+  object-fit: fill;
 }
 
 nav {

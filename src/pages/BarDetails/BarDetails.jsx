@@ -70,14 +70,15 @@ const BarDetails = (props) => {
             <p className={styles.locationPrice} >Price: {bar.price}</p>
             <a className={styles.locationLink} href={`${bar.url}`}>Yelp Link</a>
           </div>
-          <div className={styles.cocktailContainer}>
+      </div>
+      <CocktailForm handleCreateCocktail={handleCreateCocktail} barID={bar.id} /> 
+      <div className={styles.cocktailContainer}>
           {cocktails && cocktails.map(cocktail=> 
           <div className={styles.cocktailComment} >
             <div className={styles.cocktailCommentText} >
             <p className={styles.cocktailText}>Author: {cocktail.author.name}</p>
             <p className={styles.cocktailText}>Cocktail Name: {cocktail.name}</p>
-            <p className={styles.cocktailText}>{cocktail.content}</p>
-            <p className={styles.cocktailText}>{cocktail.imageURL}</p>
+            <p className={styles.cocktailText}>Description: {cocktail.content}</p>
             </div>
             <div className={styles.editBtnContainer}>
               { (user.profile === cocktail.author._id)  && <button className={styles.deleteCocktailBtn} onClick={()=>handleDeleteCocktail(cocktail._id)}>DELETE</button> } 
@@ -87,11 +88,9 @@ const BarDetails = (props) => {
             )
           }  
         </div> 
-        <CocktailForm handleCreateCocktail={handleCreateCocktail} barID={bar.id} /> 
         <div>
           {component}
         </div>
-      </div>
     </div>
   );
 }

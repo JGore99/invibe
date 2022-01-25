@@ -1,0 +1,9 @@
+.footerBackground {
+  background-image: url("../../images/nav-bar.png");
+  border-top: 2px solid rgb(110, 58, 67);
+  object-fit: fill;
+  height: 30px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}

@@ -116,7 +116,11 @@ Our team is built of travelers and people that love to enjoy a stunning location
     <a href="#"><img src="https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku" />  </a>
     <a href="#"><img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" />  </a>
     <a href="#"><img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=JSON%20web%20tokens&logoColor=white" />  </a>
+    <a href="#"><img src="https://camo.githubusercontent.com/4cf50c2a7e9cfc6b68b5e4b0d55f9f22a7625ab83e0345036d383387666db93e/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d59656c7026636f6c6f723d443332333233266c6f676f3d59656c70266c6f676f436f6c6f723d464646464646266c6162656c3d" alt="Yelp" data-canonical-src="https://img.shields.io/static/v1?style=for-the-badge&amp;message=Yelp&amp;color=D32323&amp;logo=Yelp&amp;logoColor=FFFFFF&amp;label=" style="height: 20px" >  </a>
   </div>
+
+
+  
     
 <!-- [![JavaScript CSS React](LogoImages/css:js:html.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
