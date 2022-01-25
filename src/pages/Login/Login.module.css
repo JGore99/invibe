@@ -1,5 +1,8 @@
-.container {
-  display: flex;
-  align-items: center;
+.logincontainer {
   flex-direction: column;
+  margin: auto;
+  align-items: center; 
+  position: relative;
+  min-height: calc(100vh - 90px);
 }
+

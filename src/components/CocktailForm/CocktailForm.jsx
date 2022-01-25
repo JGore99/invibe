@@ -41,8 +41,8 @@ function CocktailForm(props) {
   console.log("=====>",props)
 
   return (
-        <div className={styles.cocktailFormContainer}>
-        <form
+    <div className={styles.cocktailFormContainer}>
+      <form className={styles.cocktailForm}
           autoComplete="off"
           onSubmit={handleSubmit}
         > 
@@ -53,15 +53,13 @@ function CocktailForm(props) {
           name="name"
           onChange={handleChange}
         />
-        <br />
-        <p>Tell Us More</p>
+        <p>Description</p>
         <textarea className={styles.newCocktailContentInput}
           value={content}
           name="content"
           onChange={handleChange}
         /> 
-        <br />
-        <button disabled={isFormInvalid()}>Post</button>
+        <button className={styles.newCocktailBtn} disabled={isFormInvalid()}>Post</button>
       </form>
     </div>
   )

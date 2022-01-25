@@ -3,52 +3,54 @@
   flex-direction: column;
   margin: auto;
   align-items: center; 
-  }
+  position: relative;
+  min-height: calc(100vh - 73px);
+}
 
 
-  .wrap {
+.wrap {
     display: flex;
     flex-direction: row; 
     width: 75%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  } 
+} 
 
-  .head {
-    color: rgb(231, 231, 231);
-    font-size: 4rem;
-  }
+.head {
+  color: rgb(231, 231, 231);
+  font-size: 4rem;
+}
 
-  .usersName {
-    color:whitesmoke;
-    font-size: 2rem;
-    padding: .5rem 2rem 1rem;
-    line-height: 1px;
-  }
+.usersName {
+  color:whitesmoke;
+  font-size: 2rem;
+  padding: .5rem 2rem 1rem;
+  line-height: 1px;
+}
 
-  .usersName:hover {
-    transform: scale(1.2);
-  }
+.usersName:hover {
+  transform: scale(1.2);
+}
 
-  .usersCard {
-    background-color: rgb(11, 18, 22, 0.5);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-  }
+.usersCard {
+  background-color: rgb(11, 18, 22, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
 
-  .usersBackground {
-    background-image: url("../../images/michael-dziedzic-zqbTr1jwSxc-unsplash.jpg");
-    background-size: 300px;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
-    width: 60vw;
-    margin: 3rem 5rem 5rem;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+.usersBackground {
+  background-image: url("../../images/michael-dziedzic-zqbTr1jwSxc-unsplash.jpg");
+  background-size: 300px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  margin: 3rem 5rem 5rem;
+  object-fit: cover;
+  border-radius: 10px;
+}

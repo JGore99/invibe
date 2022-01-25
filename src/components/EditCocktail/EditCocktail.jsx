@@ -1,6 +1,6 @@
 import { useState} from 'react'
 import { useLocation } from 'react-router-dom'
-
+import styles from "./EditCocktail.module.css"
 
 
 function EditCocktail(props) {
@@ -44,28 +44,27 @@ function EditCocktail(props) {
 
     return (
         <>
-        <form
+        <form className={styles.editCocktailForm}
         autoComplete="off"
         onSubmit={handleSubmit}
       > 
-        <p>Cocktail Name Edit</p>
-        <input
+        <p>Cocktail Name</p>
+        <input className={styles.editCocktailNameInput}
           type="text"
           value={name}
           name="name"
           onChange={handleChange}
         />
         <br />
-        <p>Tell Us More Edit</p>
-        <textarea
+        <p>Details</p>
+        <textarea className={styles.editCocktailContentInput}
           value={content}
           name="content"
           onChange={handleChange}
         /> 
         
-        <br />
-        <button  disabled={isFormInvalid()}>EDIT</button>
-        <button onClick={()=> props.resetComponent([])} >CANCEL</button>
+        <button className={styles.cancelEditCocktailBtn} onClick={()=> props.resetComponent([])} >CANCEL</button>
+        <button className={styles.editCocktailBtn} disabled={isFormInvalid()}>SAVE</button>
       </form>
       
 </>

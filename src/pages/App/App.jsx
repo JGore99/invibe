@@ -8,6 +8,7 @@ import Login from '../Login/Login'
 import Landing from '../Landing/Landing'
 import Users from '../Users/Users'
 import Profile from '../Profile/Profile'
+import Footer from '../../components/Footer/Footer'
 import SearchLocations from '../SearchLocations/SearchLocations'
 import { getLocation } from "../../services/locationService"
 import * as authService from '../../services/authService'
@@ -58,6 +59,7 @@ const App = () => {
 				<Route path="/barDetails" element={<BarDetails />}></Route>
 				<Route path="/profile/:id" element={<Profile user={user} />}></Route>
 			</Routes>
+			<Footer />
 		</>
 	);
 }

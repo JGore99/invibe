@@ -4,9 +4,9 @@ import styles from './Login.module.css'
 
 const LoginPage = (props) => {
   return (
-    <main className={styles.container}>
-      <h1>Log In</h1>
-      <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} />
+    <main className={styles.logincontainer}>
+        <h1>Log In</h1>
+        <LoginForm handleSignupOrLogin={props.handleSignupOrLogin} />
     </main>
   );
 }

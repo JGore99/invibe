@@ -3,6 +3,8 @@
   flex-direction: column;
   margin: auto;
   align-items: center; 
+  position: relative;
+  min-height: calc(100vh - 73px);
   }
 
   .userInfo{
@@ -19,7 +21,7 @@
   .followingInfo {
     color: 
     whitesmoke;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 1.2rem;
   }
 
