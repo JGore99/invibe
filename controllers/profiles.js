@@ -17,9 +17,9 @@ function index(req, res) {
   .then(profiles => {
     res.json(profiles)
     })
-  }
+}
 
-  function show(req, res) {
+function show(req, res) {
     Profile.findById(req.params.id)
     .populate("followers")
     .then(profiles => {
@@ -29,9 +29,9 @@ function index(req, res) {
       console.log(err)
       res.json(err)
     })
-  }
+}
 
-  function addFollower(req, res) {
+function addFollower(req, res) {
     Profile.findById(req.user.profile)
     .then(profile => {
       profile.followers.push(req.params.id)
@@ -45,7 +45,7 @@ function index(req, res) {
       console.log(err)
       res.json(err)
     })
-  }
+}
 
 
 function deleteFollower(req, res) {
